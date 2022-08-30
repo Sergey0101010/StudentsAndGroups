@@ -1,11 +1,11 @@
 # Students & Groups 
-Сервис для управления студентами в университете.
+A service for managing students at the university.
 
 **Stack:** Java 17, Spring boot, Hibernate, MySQL, Maven.
-## Описание.
-Функции:
-- Получение сортированного списка всех групп из БД: `GET /groups`
-- Добавление новой группы: `POST /groups`
-- Получение списка студентов определенной группы `GET /groups/{id}`
-- Удаление студента из группы `DELETE /students/{id}`
-- Добавление студента в группу `POST /students`
+## Description.
+Functions
+- Getting a sorted list of all groups from the database: `GET /groups`
+- Adding a new group: `POST /groups`
+- Getting a list of students of a certain group `GET /groups/{id}`
+- Removing a student from a group `DELETE /students/{id}`
+- Adding a student to a group `POST /students`
