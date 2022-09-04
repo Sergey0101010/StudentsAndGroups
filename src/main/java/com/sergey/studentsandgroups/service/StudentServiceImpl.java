@@ -37,6 +37,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void deleteStudent(Long id) {
-        studentRepository.deleteById(id);
+        Optional<Student> byIdStudent = studentRepository.findById(id);
+        Student studentForDelete = byIdStudent.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        studentRepository.delete(studentForDelete);
     }
+
 }
